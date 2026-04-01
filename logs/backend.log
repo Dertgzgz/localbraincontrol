@@ -1,0 +1,813 @@
+INFO:     Started server process [13736]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8000): [winerror 10048] solo se permite un uso de cada dirección de socket (protocolo/dirección de red/puerto)
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [16916]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:59212 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59212 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60131 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+INFO:     127.0.0.1:64823 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54804 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60131 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60782 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+INFO:     127.0.0.1:59212 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60131 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54804 - "GET /api/logs/peek?source=mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/logs/peek?source=frontend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/logs/peek?source=ollama HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/logs/peek?source=frontend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64823 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55238 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55238 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57046 - "OPTIONS /api/config/credentials HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57046 - "POST /api/config/credentials HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57046 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57046 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+INFO:     127.0.0.1:57046 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+INFO:     127.0.0.1:57046 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58817 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56408 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/chat/sessions/03b8ca82-e8b1-4657-9885-25ee9abdb567 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53114 - "GET /api/chat/sessions/03b8ca82-e8b1-4657-9885-25ee9abdb567 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61259 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61259 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56998 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61259 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61259 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+INFO:     127.0.0.1:56998 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53113 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+INFO:     127.0.0.1:61259 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63954 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56998 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61259 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54630 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55581 - "OPTIONS /api/logs/analyze HTTP/1.1" 200 OK
+2026-04-01 22:09:22.897 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-04-01 22:09:22.897 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+INFO:google_genai.models:AFC is enabled with max remote calls: 10.
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+ERROR:APIServer:Error in log analysis: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+INFO:     127.0.0.1:55581 - "POST /api/logs/analyze HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:59539 - "GET /api/logs/peek?source=mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/logs/peek?source=mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50949 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50949 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54470 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50949 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:     Started server process [2460]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57679 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57679 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57679 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57679 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:57679 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:57679 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57694 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59416 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54186 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54186 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65108 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:50190 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65108 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:50190 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:50190 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65108 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50190 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65108 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51459 - "OPTIONS /api/agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51459 - "POST /api/agent/chat HTTP/1.1" 200 OK
+2026-04-01 22:16:36.533 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+INFO:AgenteLocal:\U0001f50c Iniciando cliente MCP persistente...
+2026-04-01 22:16:37.406 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-04-01 22:16:37.406 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+INFO:AgenteLocal:\U0001f9e0 Invocando (async) modelo con 2 mensajes.
+DEBUG:httpcore.connection:connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002AD09A2F770>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 01 Apr 2026 20:16:40 GMT'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+INFO:AgenteLocal:\U0001f6e0\ufe0f Tool detectada: obtener_info_sistema
+INFO:AgenteLocal:\U0001f9e0 Invocando (async) modelo con 4 mensajes.
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 01 Apr 2026 20:16:45 GMT'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+2026-04-01 22:16:45.638 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "Acci\\u00f3n aprobada. (Habilitando ejecuci\\u00f3n en siguiente turno...)"}\r\n\r\n'
+DEBUG:sse_starlette.sse:Got event: http.disconnect. Stop streaming.
+INFO:     127.0.0.1:51459 - "OPTIONS /api/chat/sessions/save HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56768 - "POST /api/chat/sessions/save HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56768 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57035 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57035 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:57035 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60955 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:57035 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60955 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59547 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58109 - "GET /api/chat/sessions/03b8ca82-e8b1-4657-9885-25ee9abdb567 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60955 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60955 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60955 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49232 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49232 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49232 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:     Started server process [9080]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:60104 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60104 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:60104 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:60104 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60104 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:60104 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60104 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:60104 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:58133 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:58133 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63985 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:58133 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63985 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:58133 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021A23F15BE0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000021A23EB6490> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021A23E8F4D0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 20:23:02 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=66'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:     127.0.0.1:63985 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50557 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021A2500E710>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000021A25046670> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000021A23ED0FC0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 20:23:03 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=46'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:     127.0.0.1:58133 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63985 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59357 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58133 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:61411 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:61411 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52414 - "POST /api/agent/chat HTTP/1.1" 200 OK
+2026-04-01 22:23:30.981 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+INFO:AgenteLocal:\U0001f50c Iniciando cliente MCP persistente...
+2026-04-01 22:23:31.832 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-04-01 22:23:31.832 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+INFO:AgenteLocal:\U0001f9e0 Invocando (async) modelo con 2 mensajes.
+DEBUG:httpcore.connection:connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000021A23F16A50>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 01 Apr 2026 20:23:35 GMT'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+INFO:AgenteLocal:\U0001f6e0\ufe0f Tool detectada: listar_directorio
+INFO:AgenteLocal:\U0001f9e0 Invocando (async) modelo con 4 mensajes.
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 01 Apr 2026 20:23:37 GMT'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+2026-04-01 22:23:37.286 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "Acci\\u00f3n aprobada. (Habilitando ejecuci\\u00f3n en siguiente turno...)"}\r\n\r\n'
+DEBUG:sse_starlette.sse:Got event: http.disconnect. Stop streaming.
+INFO:     127.0.0.1:61585 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61585 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:61585 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:55487 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61585 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58017 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:55487 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58017 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:55487 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55487 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:     Started server process [4944]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:53847 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64758 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64758 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64758 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64758 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:53847 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:53847 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64758 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58936 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:53847 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58936 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:53847 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:53847 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:53847 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53847 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:50809 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:50809 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50809 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:50809 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:60854 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:60854 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57034 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49268 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:60854 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49268 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 394
+INFO:     127.0.0.1:60854 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:60854 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60854 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54664 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54664 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:61200 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:61200 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54664 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58977 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61200 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:61200 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61200 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59961 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61388 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59961 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61388 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61388 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61388 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:59961 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:59961 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61388 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59961 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:59961 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/03b8ca82-e8b1-4657-9885-25ee9abdb567 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:63966 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:63966 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64517 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61215 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61215 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:61215 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:61215 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55934 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58046 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61215 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:53409 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:53409 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62654 - "OPTIONS /api/agent/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62654 - "POST /api/agent/chat HTTP/1.1" 200 OK
+2026-04-01 22:36:24.229 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+INFO:AgenteLocal:\U0001f50c Iniciando cliente MCP persistente...
+2026-04-01 22:36:25.087 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-04-01 22:36:25.087 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+INFO:AgenteLocal:\U0001f9e0 Invocando (async) modelo con 2 mensajes.
+DEBUG:httpcore.connection:connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000018CC963F620>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 01 Apr 2026 20:36:28 GMT'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+INFO:     127.0.0.1:60047 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60047 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60047 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:sse_starlette.sse:ping: b': ping - 2026-04-01 20:36:40.553686+00:00\r\n\r\n'
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60047 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "Agemma "}\r\n\r\n'
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:52875 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "es "}\r\n\r\n'
+INFO:     127.0.0.1:52875 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "una "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "herramienta "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "de "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "gesti\\u00f3n "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "de "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "proyectos "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "y "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "tareas "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "que "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "te "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "permite "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "organizar, "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "planificar "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "y "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "controlar "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "tu "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "trabajo "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "de "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "manera "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "eficiente. "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "Aqu\\u00ed "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "hay "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "algunos "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "beneficios "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "principales "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "de "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "usar "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "Agemma: "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "1. "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "**Organizaci\\u00f3n**: "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "Agemma "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "facilita "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "la "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "organizaci\\u00f3n "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "de "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "tus "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "tareas "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "y "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "proyectos, "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "permiti\\u00e9ndote "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "tener "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "un "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "seguimiento "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "claro "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "de "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "lo "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "que "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "debes "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "hacer. "}\r\n\r\n'
+DEBUG:sse_starlette.sse:chunk: b'data: {"type": "text", "content": "2. "}\r\n\r\n'
+DEBUG:sse_starlette.sse:Got event: http.disconnect. Stop streaming.
+INFO:     127.0.0.1:52875 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:52875 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:52875 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50304 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50304 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60535 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60535 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60561 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50119 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60561 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50119 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50119 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50119 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60561 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60561 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50119 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60561 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:60561 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/chat/sessions/03b8ca82-e8b1-4657-9885-25ee9abdb567 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/chat/sessions/4edcbdd3-b228-4fa7-8906-15def48b88fa HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62836 - "GET /api/chat/sessions/80d1b9e2-9bf8-4c6d-a251-cf576edaf4ac HTTP/1.1" 200 OK
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CC963E660>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CC9594C30> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CC966C910>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 20:37:34 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=54'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:     127.0.0.1:54810 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60698 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62966 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54810 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CC966EC10>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CC968E670> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CC95F2FD0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 20:37:35 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=47'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:     127.0.0.1:56805 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60698 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62966 - "GET /api/logs/peek?source=mcp HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62966 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62966 - "OPTIONS /api/logs/analyze HTTP/1.1" 200 OK
+2026-04-01 22:37:40.558 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+INFO:google_genai.models:AFC is enabled with max remote calls: 10.
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CC95F3490>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x0000018CC968FED0> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000018CC961E210>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'X-Gemini-Service-Tier', b'standard'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 20:37:41 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=60'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error in log analysis: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+INFO:     127.0.0.1:60698 - "POST /api/logs/analyze HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:58013 - "GET /api/logs/peek?source=frontend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58013 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58013 - "GET /api/logs/peek?source=frontend HTTP/1.1" 200 OK
+2026-04-01 22:38:02.889 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+DEBUG:httpcore.connection:connect_tcp.started host='127.0.0.1' port=11434 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x0000018CC96B9310>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/x-ndjson'), (b'Date', b'Wed, 01 Apr 2026 20:38:10 GMT'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+INFO:     127.0.0.1:50746 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:62185 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:62185 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61656 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:50746 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61656 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:50746 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 393
+INFO:     127.0.0.1:50746 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50746 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+INFO:     127.0.0.1:52425 - "POST /api/logs/analyze HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52425 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:52425 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:52425 - "GET /api/ollama/tags HTTP/1.1" 200 OK
