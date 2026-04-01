@@ -1,2 +1,5 @@
 .env
 config/credentials.json
+logs/
+.venv/
+__pycache__/

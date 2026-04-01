@@ -1242,3 +1242,148 @@ DEBUG:sse_starlette.sse:Got event: http.disconnect. Stop streaming.
 INFO:     127.0.0.1:57090 - "OPTIONS /api/chat/sessions/save HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57090 - "POST /api/chat/sessions/save HTTP/1.1" 200 OK
 INFO:     127.0.0.1:57090 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:     Started server process [13972]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:58621 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54941 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54941 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58621 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49965 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54941 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49965 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54941 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54941 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:54941 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54941 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:63354 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:63354 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F1FDA90>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BE5F195770> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F16F4D0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 21:19:29 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=48'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:     127.0.0.1:65105 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62850 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63354 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F20A0D0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BE5F24A8F0> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F1D0D60>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Type', b'application/json; charset=UTF-8'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 21:19:29 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=46'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: GET https://generativelanguage.googleapis.com/v1beta/models "HTTP/1.1 200 OK"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'GET']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error listing Google models: 'Model' object has no attribute 'supported_generation_methods'
+DEBUG:httpcore.connection:close.started
+DEBUG:httpcore.connection:close.complete
+INFO:     127.0.0.1:49198 - "GET /api/models/google HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57692 - "GET /api/logs/peek?source=app HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62850 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62850 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62850 - "OPTIONS /api/logs/analyze HTTP/1.1" 200 OK
+2026-04-01 23:19:32.419 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-04-01 23:19:32.419 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+INFO:google_genai.models:AFC is enabled with max remote calls: 10.
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F1D23F0>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BE5F24AFD0> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F19F0B0>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'X-Gemini-Service-Tier', b'standard'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 21:19:33 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=59'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error in log analysis: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+INFO:     127.0.0.1:57692 - "POST /api/logs/analyze HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:54772 - "GET /api/logs/peek?source=backend HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54772 - "GET /api/logs/peek?source=frontend HTTP/1.1" 200 OK
+2026-04-01 23:19:53.097 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+INFO:google_genai.models:AFC is enabled with max remote calls: 10.
+DEBUG:httpcore.connection:connect_tcp.started host='generativelanguage.googleapis.com' port=443 local_address=None timeout=None socket_options=None
+DEBUG:httpcore.connection:connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F1D6250>
+DEBUG:httpcore.connection:start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BE5F24BA70> server_hostname='generativelanguage.googleapis.com' timeout=None
+DEBUG:httpcore.connection:start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BE5F1D6360>
+DEBUG:httpcore.http11:send_request_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_headers.complete
+DEBUG:httpcore.http11:send_request_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:send_request_body.complete
+DEBUG:httpcore.http11:receive_response_headers.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_headers.complete return_value=(b'HTTP/1.1', 404, b'Not Found', [(b'X-Gemini-Service-Tier', b'standard'), (b'Vary', b'Origin'), (b'Vary', b'X-Origin'), (b'Vary', b'Referer'), (b'Content-Type', b'application/json; charset=UTF-8'), (b'Content-Encoding', b'gzip'), (b'Date', b'Wed, 01 Apr 2026 21:19:54 GMT'), (b'Server', b'scaffolding on HTTPServer2'), (b'X-XSS-Protection', b'0'), (b'X-Frame-Options', b'SAMEORIGIN'), (b'X-Content-Type-Options', b'nosniff'), (b'Server-Timing', b'gfet4t7; dur=55'), (b'Alt-Svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), (b'Transfer-Encoding', b'chunked')])
+INFO:httpx:HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+DEBUG:httpcore.http11:receive_response_body.started request=<Request [b'POST']>
+DEBUG:httpcore.http11:receive_response_body.complete
+DEBUG:httpcore.http11:response_closed.started
+DEBUG:httpcore.http11:response_closed.complete
+ERROR:APIServer:Error in log analysis: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+INFO:     127.0.0.1:54772 - "POST /api/logs/analyze HTTP/1.1" 500 Internal Server Error
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:54772 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200 686
+INFO:     127.0.0.1:54772 - "GET /api/ollama/tags HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53846 - "OPTIONS /api/config/credentials HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53846 - "POST /api/config/credentials HTTP/1.1" 200 OK
