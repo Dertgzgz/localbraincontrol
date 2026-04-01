@@ -14,7 +14,7 @@ TRANSLATIONS = {
     "usage_title": {"es": "Cuotas de Uso", "en": "Usage Quotas", "eu": "Erabilera Kuotak"},
     "usage_tokens": {"es": "Tokens Consumidos", "en": "Tokens Consumed", "eu": "Kontsumitutako Tokenak"},
     "usage_requests": {"es": "Peticiones Realizadas", "en": "Requests Made", "eu": "Egindako Eskaerak"},
-    "select_model": {"es": "Seleccionar Modelo", "en": "Select Model", "eu": "Eredua Hautatu"},
+    "model_selector_title": {"es": "Modelo IA", "en": "AI Model", "eu": "IA Eredua"},
     
     # Dashboard (ui_dashboard_ia.py)
     "dash_title": {"es": "Centro de Control IA (Dashboard)", "en": "AI Control Center (Dashboard)", "eu": "IA Kontrol Zentroa (Dashboard)"},

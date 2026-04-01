@@ -16,12 +16,12 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { analyzeLogs, getGoogleModels, getUsageStats, peekLogs } from '../lib/api';
+import { useChat } from '../context/ChatContext';
+import ModelSelector from './ModelSelector';
 
 const LogAnalyzer = ({ t, lang }) => {
-  const [source, setSource] = useState('app');
-  const [provider, setProvider] = useState('google'); // 'google' or 'local'
-  const [selectedModel, setSelectedModel] = useState('gemini-1.5-flash');
-  const [googleModels, setGoogleModels] = useState([]);
+  const { availableModels, selectedModel, setSelectedModel, modelProvider, setModelProvider } = useChat();
+  
   const [usage, setUsage] = useState({ tokens_consumed: 0, requests_count: 0 });
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [result, setResult] = useState(null);
@@ -32,12 +32,10 @@ const LogAnalyzer = ({ t, lang }) => {
   useEffect(() => {
     const init = async () => {
       try {
-        const [models, stats] = await Promise.all([getGoogleModels(), getUsageStats()]);
-        setGoogleModels(models);
+        const stats = await getUsageStats();
         setUsage(stats);
-        if (models.length > 0) setSelectedModel(models[0].id);
       } catch (e) {
-        console.error('Error fetching models/stats:', e);
+        console.error('Error fetching stats:', e);
       }
     };
     init();
@@ -62,7 +60,7 @@ const LogAnalyzer = ({ t, lang }) => {
     setIsAnalyzing(true);
     setResult(null);
     try {
-      const agentId = provider === 'local' ? 'qwen' : selectedModel;
+      const agentId = modelProvider === 'ollama' ? selectedModel : 'gemini-2.0-flash';
       const data = await analyzeLogs(source, agentId);
       setResult(data);
       // Refresh usage after analysis
@@ -143,42 +141,28 @@ const LogAnalyzer = ({ t, lang }) => {
               {/* Provider Toggles */}
               <div className="flex p-1 bg-black rounded-xl border border-gray-900 mb-6">
                 <button 
-                  onClick={() => setProvider('google')}
-                  className={`flex-1 py-2 text-[10px] font-bold rounded-lg transition-all ${provider === 'google' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                  onClick={() => setModelProvider('google')}
+                  className={`flex-1 py-2 text-[10px] font-bold rounded-lg transition-all ${modelProvider === 'google' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-300'}`}
                 >
                   GOOGLE CLOUD
                 </button>
                 <button 
-                  onClick={() => setProvider('local')}
-                  className={`flex-1 py-2 text-[10px] font-bold rounded-lg transition-all ${provider === 'local' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-300'}`}
+                  onClick={() => setModelProvider('ollama')}
+                  className={`flex-1 py-2 text-[10px] font-bold rounded-lg transition-all ${modelProvider === 'ollama' ? 'bg-gray-800 text-white' : 'text-gray-500 hover:text-gray-300'}`}
                 >
-                  LOCAL QWEN
+                  LOCAL OLLAMA
                 </button>
               </div>
 
-              {provider === 'google' ? (
-                <div className="space-y-3">
-                  <div className="relative group">
-                    <select 
-                      value={selectedModel}
-                      onChange={(e) => setSelectedModel(e.target.value)}
-                      className="w-full bg-[#1a1a1a] border border-gray-800 text-gray-200 text-xs rounded-xl py-3 px-4 appearance-none focus:outline-none focus:border-primary transition-all group-hover:border-gray-700 font-bold"
-                    >
-                      {googleModels.map(m => (
-                        <option key={m.id} value={m.id} className="bg-[#111]">{m.name}</option>
-                      ))}
-                    </select>
-                    <ChevronDown className="absolute right-4 top-3 h-4 w-4 text-gray-500 pointer-events-none" />
-                  </div>
-                  <p className="text-[9px] text-gray-600 px-1 italic">Selecting model from your Google AI Studio account.</p>
-                </div>
-              ) : (
-                <div className="p-4 rounded-xl bg-primary/5 border border-primary/20 text-center">
-                  <BrainCircuit className="h-8 w-8 text-primary mx-auto mb-2 opacity-50" />
-                  <p className="text-[10px] font-bold text-primary">Qwen 2.5 Coder 3B</p>
-                  <p className="text-[9px] text-gray-500">Fast, local, offline.</p>
-                </div>
-              )}
+              <ModelSelector
+                availableModels={availableModels}
+                selectedModel={selectedModel}
+                onModelChange={setSelectedModel}
+                modelProvider={modelProvider}
+                onProviderChange={setModelProvider}
+                t={t}
+                compact={false}
+              />
             </div>
           </section>
 

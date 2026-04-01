@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { getSessions } from '../lib/api';
+import { getSessions, getOllamaTags } from '../lib/api';
 
 const ChatContext = createContext();
 
@@ -10,10 +10,16 @@ export const ChatProvider = ({ children }) => {
   const [contextItems, setContextItems] = useState([]);
   const [isStreaming, setIsStreaming] = useState(false);
   const [isResolving, setIsResolving] = useState(false);
+  
+  // Estado para modelos
+  const [availableModels, setAvailableModels] = useState([]);
+  const [selectedModel, setSelectedModel] = useState('qwen2.5-coder:3b');
+  const [modelProvider, setModelProvider] = useState('ollama'); // 'ollama' or 'google'
 
-  // Cargar sesiones al inicio
+  // Cargar sesiones y modelos al inicio
   useEffect(() => {
     fetchSessions();
+    fetchModels();
   }, []);
 
   const fetchSessions = async () => {
@@ -22,6 +28,19 @@ export const ChatProvider = ({ children }) => {
       setSessions(data);
     } catch (e) {
       console.error("Error fetching sessions in context", e);
+    }
+  };
+
+  const fetchModels = async () => {
+    try {
+      const models = await getOllamaTags();
+      if (models && models.models) {
+        setAvailableModels(models.models.map(m => ({ id: m.name, name: m.name, size: m.size })));
+      }
+    } catch (e) {
+      console.error("Error fetching models", e);
+      // Fallback a modelo por defecto
+      setAvailableModels([{ id: 'qwen2.5-coder:3b', name: 'qwen2.5-coder:3b' }]);
     }
   };
 
@@ -39,7 +58,11 @@ export const ChatProvider = ({ children }) => {
       contextItems, setContextItems,
       isStreaming, setIsStreaming,
       isResolving, setIsResolving,
+      availableModels, setAvailableModels,
+      selectedModel, setSelectedModel,
+      modelProvider, setModelProvider,
       fetchSessions,
+      fetchModels,
       clearChat
     }}>
       {children}

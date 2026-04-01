@@ -20,6 +20,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import { streamAgentChat, getSessions, getSession, saveSession, resolveContext } from '../lib/api';
 import ContextChip from './ContextChip';
+import ModelSelector from './ModelSelector';
 
 import { useChat } from '../context/ChatContext';
 
@@ -31,6 +32,8 @@ const ChatTerminal = ({ t, lang }) => {
     contextItems, setContextItems,
     isStreaming, setIsStreaming,
     isResolving, setIsResolving,
+    availableModels, selectedModel, setSelectedModel,
+    modelProvider, setModelProvider,
     fetchSessions,
     clearChat
   } = useChat();
@@ -208,6 +211,15 @@ const ChatTerminal = ({ t, lang }) => {
           </div>
           
           <div className="flex items-center gap-2">
+            <ModelSelector
+              availableModels={availableModels}
+              selectedModel={selectedModel}
+              onModelChange={setSelectedModel}
+              modelProvider={modelProvider}
+              onProviderChange={setModelProvider}
+              t={t}
+              compact={true}
+            />
             <button 
               onClick={() => setShowContext(!showContext)}
               className={`flex items-center gap-2 px-3 py-1.5 rounded-lg text-[10px] font-bold transition-all border ${showContext ? 'bg-primary/20 text-primary border-primary/30' : 'bg-white/5 text-gray-500 border-white/10 hover:text-white'}`}

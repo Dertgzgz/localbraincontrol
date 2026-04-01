@@ -147,7 +147,22 @@ async def list_google_models():
 
         client = genai.Client(api_key=api_key)
         models = client.models.list()
-        return [{"id": m.name.split("/")[-1], "name": m.display_name} for m in models if "generateContent" in m.supported_generation_methods]
+        result = []
+        for m in models:
+            try:
+                # Intentar el método antiguo
+                if hasattr(m, 'supported_generation_methods') and "generateContent" in m.supported_generation_methods:
+                    result.append({"id": m.name.split("/")[-1], "name": m.display_name})
+                elif hasattr(m, 'supported_actions') and "generateContent" in m.supported_actions:
+                    result.append({"id": m.name.split("/")[-1], "name": m.display_name})
+                else:
+                    # Si no tiene el atributo, asumir que es un modelo generativo
+                    result.append({"id": m.name.split("/")[-1], "name": m.display_name})
+            except AttributeError:
+                # Fallback: incluir todos los modelos Gemini
+                if "gemini" in m.name.lower():
+                    result.append({"id": m.name.split("/")[-1], "name": m.display_name})
+        return result
     except Exception as e:
         logger.error(f"Error listing Google models: {e}")
         return [{"id": "gemini-1.5-flash", "name": "Gemini 1.5 Flash (Default)"}]
@@ -316,7 +331,7 @@ async def save_model_settings(request: Request):
 
 @app.post("/api/model/optimize")
 async def optimize_model(request: Request):
-    # Gemini analiza el hardware y sugiere parámetros
+    # Usar modelo local para analizar hardware y sugerir parámetros
     try:
         mem = psutil.virtual_memory()
         gpu = get_gpu_stats()
@@ -338,20 +353,25 @@ async def optimize_model(request: Request):
             "- reasoning: string (explicación breve de por qué estos valores para este PC en español)\n"
         )
         
-        api_key = os.environ.get("GEMINI_API_KEY")
-        if not api_key:
-            path = "config/credentials.json"
-            if os.path.exists(path):
-                with open(path, "r") as f: api_key = json.load(f).get("google")
+        # Usar modelo local en lugar de Google Gemini
+        sys_ctx = {"os": sys.platform, "cpu_threads": psutil.cpu_count(), "ram_total_gb": round(mem.total / (1024**3), 2), "gpu": "Detected"}
         
-        if not api_key: raise HTTPException(status_code=401, detail="Google API Key required for optimization")
-            
-        client = genai.Client(api_key=api_key)
-        res = client.models.generate_content(model="gemini-1.5-flash", contents=prompt)
+        response_text = ""
+        async for chunk in ejecutar_agente_local_async(prompt, sys_context=sys_ctx):
+            # El chunk viene en formato SSE: {"type": "text", "content": "..."}
+            try:
+                chunk_data = json.loads(chunk)
+                if chunk_data.get("type") == "text":
+                    response_text += chunk_data.get("content", "")
+            except json.JSONDecodeError:
+                # Si no es JSON válido, agregarlo directamente
+                response_text += chunk
+        
+        logger.info(f"Respuesta concatenada del modelo local: {response_text}")
         
         # Extraer JSON de la respuesta
         import re
-        match = re.search(r"\{[\s\S]*\}", res.text)
+        match = re.search(r"\{[\s\S]*\}", response_text)
         if match:
             suggestion = json.loads(match.group(0))
             return suggestion
