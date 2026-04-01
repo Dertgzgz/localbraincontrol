@@ -10,7 +10,7 @@ import time
 from typing import List, Optional, Dict
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 from sse_starlette.sse import EventSourceResponse
 from google import genai
@@ -29,16 +29,20 @@ USAGE_FILE = "config/usage_stats.json"
 def load_usage():
     try:
         if os.path.exists(USAGE_FILE):
-            with open(USAGE_FILE, "r") as f: return json.load(f)
-    except: pass
+            with open(USAGE_FILE, "r") as f:
+                return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
     return {"tokens_consumed": 0, "requests_count": 0, "last_update": ""}
 
 def save_usage(stats):
     try:
         os.makedirs("config", exist_ok=True)
         stats["last_update"] = str(asyncio.get_event_loop().time())
-        with open(USAGE_FILE, "w") as f: json.dump(stats, f)
-    except: pass
+        with open(USAGE_FILE, "w") as f:
+            json.dump(stats, f)
+    except (OSError, json.JSONEncodeError):
+        pass
 
 def track_usage(tokens: int):
     stats = load_usage()
@@ -73,9 +77,9 @@ class Message(BaseModel):
     content: str
 
 class ChatRequest(BaseModel):
-    prompt: str
+    prompt: str = Field(..., max_length=10000)  # Limitar longitud del prompt
     history: List[Message] = []
-    lang: str = "es"
+    lang: str = Field("es", pattern="^(es|en|eu)$")  # Solo idiomas soportados
 
 class PullRequest(BaseModel):
     name: str
@@ -221,6 +225,7 @@ async def get_system_capabilities():
 
 @app.post("/api/config/credentials")
 async def save_credentials(req: CredentialRequest):
+    # TODO: Implementar encriptación de credenciales para mayor seguridad
     os.makedirs("config", exist_ok=True)
     path = "config/credentials.json"
     creds = {}

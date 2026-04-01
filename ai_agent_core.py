@@ -1,8 +1,8 @@
 import asyncio
 import json
+import os
 import uuid
 import re
-import time
 import logging
 from typing import List, AsyncGenerator
 from langchain_ollama import ChatOllama
@@ -57,7 +57,8 @@ def get_llm():
         if os.path.exists("config/model_settings.json"):
             with open("config/model_settings.json", "r") as f:
                 settings.update(json.load(f))
-    except: pass
+    except (FileNotFoundError, json.JSONDecodeError):
+        pass
 
     return PatchedChatOllama(
         model="qwen2.5-coder:3b", 

@@ -14,8 +14,10 @@ def kill_process_on_port(port):
                     proc.send_signal(psutil.signal.SIGTERM)
                     proc.wait(timeout=3)
         except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.TimeoutExpired):
-            try: proc.kill()
-            except: pass
+            try:
+                proc.kill()
+            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                pass
 
 def restart():
     print("🔄 Iniciando Reinicio de Infraestructura Antigravity...")

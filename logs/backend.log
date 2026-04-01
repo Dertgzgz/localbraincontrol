@@ -1387,3 +1387,497 @@ DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/tags HTTP/1.1" 200
 INFO:     127.0.0.1:54772 - "GET /api/ollama/tags HTTP/1.1" 200 OK
 INFO:     127.0.0.1:53846 - "OPTIONS /api/config/credentials HTTP/1.1" 200 OK
 INFO:     127.0.0.1:53846 - "POST /api/config/credentials HTTP/1.1" 200 OK
+DEBUG:asyncio:Using proactor: IocpProactor
+INFO:     Started server process [1264]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:51987 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60702 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60702 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60702 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60702 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60702 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60802 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60802 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51987 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51987 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56777 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:56777 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56777 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59613 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:59613 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59613 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51391 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51391 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51391 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51391 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51391 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51391 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51738 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51738 - "GET /api/config/i18n HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/system/metrics HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/system/metrics HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51738 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:11434
+DEBUG:urllib3.connectionpool:http://localhost:11434 "GET /api/ps HTTP/1.1" 200 13
+INFO:     127.0.0.1:51738 - "GET /api/ollama/ps HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/system/usage HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58066 - "GET /api/chat/sessions/0f7e3927-d949-4035-bd51-67947c3d37cb HTTP/1.1" 200 OK

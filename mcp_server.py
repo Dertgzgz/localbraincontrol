@@ -2,7 +2,6 @@ import asyncio
 import os
 import subprocess
 import logging
-import json
 from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent, CallToolResult
@@ -259,12 +258,14 @@ async def call_tool(name: str, arguments: dict) -> CallToolResult:
                 if accion == "leer":
                     resultado = await page.locator(selector or "body").inner_text()
                 elif accion == "click":
-                    if not selector: raise ValueError("Se requiere un 'selector' para hacer click.")
+                    if not selector:
+                        raise ValueError("Se requiere un 'selector' para hacer click.")
                     await page.click(selector)
                     await page.wait_for_timeout(1000)
                     resultado = f"Click ejecutado exitosamente en {selector}."
                 elif accion == "escribir":
-                    if not selector: raise ValueError("Se requiere un 'selector' para escribir.")
+                    if not selector:
+                        raise ValueError("Se requiere un 'selector' para escribir.")
                     await page.fill(selector, texto)
                     resultado = f"Texto '{texto}' introducido en {selector}."
                 await browser.close()
