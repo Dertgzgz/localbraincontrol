@@ -11,25 +11,53 @@ class HuggingFaceService:
     def __init__(self):
         self.api = HfApi()
 
-    async def search_models(self, query: str, limit: int = 5):
-        """Busca modelos en Hugging Face que tengan formato GGUF."""
+    def search_models(self, query: str, limit: int = 5):
+        """Busca modelos en Hugging Face."""
         try:
-            models = self.api.list_models(
-                search=query,
-                tags="gguf",
+            logger.info(f"Searching for models with query: {query}, limit: {limit}")
+            
+            # Primero buscar modelos GGUF
+            gguf_models = list(self.api.list_models(
+                search=f"{query} gguf",
                 limit=limit,
-                sort="downloads",
-                direction=-1
-            )
-            return [
+                sort="downloads"
+            ))
+            
+            logger.info(f"Found {len(gguf_models)} GGUF models")
+            
+            if gguf_models:
+                result = [
+                    {
+                        "id": m.modelId,
+                        "name": m.modelId.split("/")[-1],
+                        "downloads": m.downloads,
+                        "likes": m.likes,
+                        "tags": m.tags
+                    } for m in gguf_models
+                ]
+                logger.info(f"Returning {len(result)} GGUF models")
+                return result
+            
+            # Si no hay modelos GGUF, buscar modelos generales
+            general_models = list(self.api.list_models(
+                search=query,
+                limit=limit,
+                sort="downloads"
+            ))
+            
+            logger.info(f"Found {len(general_models)} general models")
+            
+            result = [
                 {
                     "id": m.modelId,
                     "name": m.modelId.split("/")[-1],
                     "downloads": m.downloads,
                     "likes": m.likes,
                     "tags": m.tags
-                } for m in models
+                } for m in general_models
             ]
+            logger.info(f"Returning {len(result)} general models")
+            return result
         except Exception as e:
             logger.error(f"Error searching HF: {e}")
             return []
@@ -54,14 +82,27 @@ class HuggingFaceService:
             with open(modelfile_path, "w") as f:
                 f.write(modelfile_content)
             
-            # 3. Registrar en Ollama (Vía CLI por simplicidad de streaming si fuera necesario, 
-            # pero aquí usamos una petición HTTP simple)
-            return {
-                "status": "success",
-                "model": model_name,
-                "file": file_path,
-                "command": f"ollama create {model_name} -f {modelfile_path}"
-            }
+            # 3. Registrar en Ollama
+            import subprocess
+            result = subprocess.run(
+                ["ollama", "create", model_name, "-f", modelfile_path],
+                capture_output=True,
+                text=True,
+                cwd=target_dir
+            )
+            
+            if result.returncode == 0:
+                return {
+                    "status": "success",
+                    "model": model_name,
+                    "file": file_path,
+                    "message": f"Model {model_name} created successfully"
+                }
+            else:
+                return {
+                    "status": "error",
+                    "message": f"Failed to create model: {result.stderr}"
+                }
             
         except Exception as e:
             logger.error(f"Error in HF download/register: {e}")

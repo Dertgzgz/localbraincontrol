@@ -59,6 +59,28 @@ export const getModelSettings = async () => (await api.get('/model/settings')).d
 export const saveModelSettings = async (settings) => (await api.post('/model/settings', settings)).data;
 export const getAIOptimization = async () => (await api.post('/model/optimize', {})).data;
 
+// Hugging Face API functions
+export const searchHfModels = async (query, limit = 10) => {
+  const { data } = await api.get(`/huggingface/search?q=${encodeURIComponent(query)}&limit=${limit}`);
+  return data;
+};
+
+export const downloadHfModel = async (repoId, filename) => {
+  const { data } = await api.post('/huggingface/download', { repoId, filename });
+  return data;
+};
+
+// ModelScope API functions
+export const searchMsModels = async (query, limit = 10) => {
+  const { data } = await api.get(`/modelscope/search?q=${encodeURIComponent(query)}&limit=${limit}`);
+  return data;
+};
+
+export const downloadMsModel = async (modelId) => {
+  const { data } = await api.post('/modelscope/download', { modelId });
+  return data;
+};
+
 // Para streaming necesitamos EventSource nativo o Fetch
 export const streamAgentChat = (prompt, history, onChunk, onComplete, onError) => {
   const url = `${API_BASE}/agent/chat`;

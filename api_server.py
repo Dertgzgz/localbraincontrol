@@ -21,6 +21,7 @@ from i18n import TRANSLATIONS, t
 from ai_agent_core import ejecutar_agente_local_async
 from langchain_core.messages import HumanMessage, AIMessage
 from huggingface_service import hf_service
+from modelscope_service import modelscope_service
 
 load_dotenv()
 
@@ -381,7 +382,69 @@ async def optimize_model(request: Request):
         return {"error": str(e)}
 
 @app.get("/api/huggingface/search")
-async def search_hf_models(q: str): return await hf_service.search_models(q)
+async def search_hf_models(q: str, limit: int = 10):
+    try:
+        return hf_service.search_models(q, limit)
+    except Exception as e:
+        logger.error(f"Error searching HF models: {e}")
+        return []
+
+@app.post("/api/huggingface/download")
+async def download_hf_model(request: dict):
+    repo_id = request.get("repoId")
+    filename = request.get("filename")
+    if not repo_id or not filename:
+        return {"error": "repoId and filename required"}
+    
+    try:
+        result = hf_service.download_and_register(repo_id, filename, "C:\\Users\\alber\\.ollama\\models")
+        return result
+    except Exception as e:
+        logger.error(f"Error downloading HF model: {e}")
+        return {"error": str(e)}
+
+@app.get("/api/modelscope/search")
+async def search_ms_models(q: str, limit: int = 10):
+    try:
+        return modelscope_service.search_models(q, limit)
+    except Exception as e:
+        logger.error(f"Error searching ModelScope: {e}")
+        return []
+
+@app.post("/api/modelscope/download")
+async def download_ms_model(request: dict):
+    model_id = request.get("modelId")
+    if not model_id:
+        return {"error": "modelId required"}
+    
+    try:
+        result = modelscope_service.download_and_register(model_id, "C:\\Users\\alber\\.ollama\\models")
+        return result
+    except Exception as e:
+        logger.error(f"Error downloading ModelScope model: {e}")
+        return {"error": str(e)}
+
+@app.post("/api/errors/log")
+async def log_frontend_error(request: dict):
+    """Endpoint para que el frontend registre errores"""
+    error_data = request.get("error", {})
+    component = request.get("component", "frontend")
+    message = error_data.get("message", "Unknown error")
+    stack = error_data.get("stack", "")
+    url = error_data.get("url", "")
+    line = error_data.get("line", 0)
+    column = error_data.get("column", 0)
+
+    # Log detallado
+    logger.error(f"Frontend Error: {message}", extra={
+        'component': component,
+        'stack': stack,
+        'url': url,
+        'line': line,
+        'column': column
+    })
+
+    return {"status": "logged"}
 
 if __name__ == "__main__":
     import uvicorn
