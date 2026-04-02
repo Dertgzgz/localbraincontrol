@@ -1,0 +1,15 @@
+# requirements.txt
+fastapi
+uvicorn
+python-multipart
+cryptography
+python-jose[cryptography]
+passlib[pbkdf2]
+sse-starlette
+psutil
+httpx
+python-dotenv
+langchain-ollama
+langchain-core
+google-genai
+pydantic

@@ -39,15 +39,34 @@ Antes de instalar, asegúrate de tener:
    pip install -r requirements.txt
    ```
 
-## ⚙️ Configuración
+## 🏗️ Arquitectura del Backend
 
-Edita el archivo de configuración (o variables de entorno) para definir la ruta de tus modelos y los parámetros de inferencia:
+El backend está organizado de manera modular para facilitar el mantenimiento y la escalabilidad:
 
-```yaml
-model_path: "./models/mi-modelo-cuantizado.gguf"
-ctx_size: 4096
-gpu_layers: 35
-temperature: 0.7
+```
+backend/
+├── main.py              # Punto de entrada de FastAPI
+├── config.py            # Configuraciones y utilidades (logging, persistencia)
+├── dependencies.py      # Dependencias FastAPI (autenticación)
+├── models/
+│   ├── __init__.py
+│   └── schemas.py       # Modelos Pydantic
+├── routers/
+│   ├── auth_router.py   # Rutas de autenticación
+│   ├── agent_router.py  # Rutas del agente de IA
+│   ├── system_router.py # Rutas de métricas del sistema
+│   └── config_router.py # Rutas de configuración
+└── utils/
+    ├── __init__.py
+    └── security.py      # Funciones de seguridad (encriptación, JWT)
+```
+
+### Ejecutar el Servidor
+```bash
+python run_server.py
+```
+
+El servidor se ejecutará en `http://localhost:8000` con documentación automática en `/docs`.
 ```
 
 ## 🖥️ Uso Técnico

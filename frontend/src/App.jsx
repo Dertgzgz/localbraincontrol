@@ -10,9 +10,12 @@ import {
   Terminal,
   Languages,
   ChevronRight,
-  Package
+  Package,
+  LogOut
 } from 'lucide-react';
 import { getTranslations } from './lib/api';
+import { useAuth } from './context/AuthContext';
+import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import ChatTerminal from './components/ChatTerminal';
 import LogAnalyzer from './components/LogAnalyzer';
@@ -21,6 +24,7 @@ import PerformanceTuner from './components/PerformanceTuner';
 import Settings from './components/Settings';
 
 function App() {
+  const { user, logout, loading: authLoading } = useAuth();
   const [activeTab, setActiveTab] = useState('dashboard');
   const [lang, setLang] = useState('es');
   const [translations, setTranslations] = useState(null);
@@ -44,6 +48,18 @@ function App() {
     if (!translations || !translations[key]) return key;
     return translations[key][lang] || translations[key]['es'];
   };
+
+  if (authLoading || loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  if (!user) {
+    return <Login />;
+  }
 
   const menuItems = [
     { id: 'dashboard', icon: LayoutDashboard, label: t('nav_dashboard') },
@@ -95,6 +111,13 @@ function App() {
         </nav>
 
         <div className="mt-auto pt-4 border-t border-gray-800">
+          <button
+            onClick={logout}
+            className="w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-gray-400 hover:bg-white/5 hover:text-white transition-all mb-4"
+          >
+            <LogOut className="h-5 w-5" />
+            <span className="font-medium">Cerrar Sesión</span>
+          </button>
           <div className="flex items-center gap-3 px-2 mb-4">
             <Languages className="h-4 w-4 text-gray-500" />
             <select 

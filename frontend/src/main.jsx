@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { ChatProvider } from './context/ChatContext.jsx'
+import { AuthProvider } from './context/AuthContext.jsx'
 import api from './lib/api.js'
 
 // Función para enviar errores al backend
@@ -44,8 +45,10 @@ window.addEventListener('unhandledrejection', (event) => {
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ChatProvider>
-      <App />
-    </ChatProvider>
+    <AuthProvider>
+      <ChatProvider>
+        <App />
+      </ChatProvider>
+    </AuthProvider>
   </StrictMode>,
 )
